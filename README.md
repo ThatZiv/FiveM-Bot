@@ -39,3 +39,9 @@ Join [Discord](https://discord.gg/yWddFpQ) :)
 -------
 [![Discord Bots](https://discordbots.org/api/widget/483787947070586880.svg)](https://discordbots.org/bot/483787947070586880)
 ----------
+# __FAQ__
+| **Error** | **Solution** | **Example**|
+| ------ | ------ | ------- |
+| `Error: Invalid URI ` | Set the FiveM server URL correctly: No `<>` symbols and no spaces between the port and **No** `http://` | `$set thatziv.ddns.net:30120` | 
+*More to come.*
+---
