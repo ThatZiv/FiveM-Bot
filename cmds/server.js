@@ -30,7 +30,7 @@ exports.run = async (client, message, args) => {
         }
         if (!start2.vars.tags) {var tags = 'None'} else {var tags = start2.vars.tags}
         var resourcee = JSON.stringify(start2.resources)
-        if (resourcee.length > 600) {
+        if (resourcee.length > 850) {
             var resourc = `There are too many...\n(Passed Discord Char Limit)`
         } else {
             var resourc = resourcee;
