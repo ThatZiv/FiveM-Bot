@@ -124,10 +124,10 @@ setTimeout(() => {
 
 //initial start funtion
 client.on("ready", () => {
-
+    var statuss = [`${client.users.size} Users`, `${client.guilds.size} Servers`]
     setInterval(function start(){
         console.log(`[${client.user.username} Bot]: INITIALIZED...`);
-        client.user.setActivity(`${client.guilds.size} Servers | ${config.prefix}help `, { type: "WATCHING" });
+        client.user.setActivity(`${statuss[Math.floor(Math.random() * statuss.length)]} | ${config.prefix}help `, { type: "WATCHING" });
         client.user.setStatus('online');
         
         return start;
