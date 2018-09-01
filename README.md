@@ -24,6 +24,6 @@ This bot is ran by [**node.js**](https://nodejs.org) using the [**discord.js**](
 2. Extract `extract_me.rar`
 3. Open CMD and cd into the dir where this is installed and ->`node fivem.js` (in cmd)
 ---
-==Join [Discord](https://discord.gg/yWddFpQ)== :)
+Join [Discord](https://discord.gg/yWddFpQ) :)
 ## Feedback is also pretty neat.
 -------
