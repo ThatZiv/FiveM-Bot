@@ -4,7 +4,7 @@
 ![alt-text](https://github.com/ThatZiv/FiveM-Bot/blob/master/sample.PNG?raw=true)
 ## __Set-Up__ 
 1. Invite the [bot](https://discordapp.com/oauth2/authorize?client_id=483787947070586880&permissions=8&scope=bot)
-2. In any channel, type `#set <serverAddress:withPort>` (ex: `#aset thatziv.ddns.net:30120`)
+2. In any channel, type `#set <serverAddress:withPort>` (ex: `#set thatziv.ddns.net:30120`)
 3. The Bot is now setup, do `#help` to see all the commands
 
  ## __Tutorial/Demonstration__
