@@ -8,7 +8,6 @@
 
 ## No Advanced Setup Required!
 **FiveM Bot** is a discord bot by *Zua* that makes monitoring your FiveM server easily.
-https://discordbots.org/bot/483787947070586880
 ![alt-text](https://github.com/ThatZiv/FiveM-Bot/blob/master/sample.PNG?raw=true)
 ## __Set-Up__ 
 1. Invite the [bot](https://discordapp.com/oauth2/authorize?client_id=483787947070586880&permissions=8&scope=bot)
