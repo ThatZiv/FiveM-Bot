@@ -42,7 +42,9 @@ exports.run = async (client, message, args) => {
         .addBlankField(true)
         .addField("Identifiers", "```json\n"+`${JSON.stringify(result.identifiers)}`+"```")
         //.attachFile(`cache/${num}.png`)
-        message.channel.send({embed: embed}) 
+        message.channel.send({embed: embed})
+        console.log(`Used Command [ID] in ${message.guild.name}`)
+        util.log(`Used Command [ID]`)        
         } catch (error) {
             console.log(error)
             util.embed("The person was not found.")
