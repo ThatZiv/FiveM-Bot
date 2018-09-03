@@ -19,7 +19,8 @@ exports.run = async (client, message, args) => {
     .addBlankField(true)
     .addField("Also Remember To Check Out Zua's:", `Twitch - https://twitch.tv/zuacp \nYoutube - https://www.youtube.com/channel/UCjAu7aRli_GePQb4FnzRRWg\nWebsite - http://zavaar.cf/\n`)
     .setFooter("Copyright © Zua - http://zavaar.cf")
-    console.log('FIVEM help cmd was used..')
+    console.log(`FIVEM help cmd was used.. in ${message.guild.name}`)
+    util.log(`FIVEM help cmd was used`)
     message.channel.send({embed: embed});
     }
     var res = JSON.parse(body)
@@ -39,7 +40,8 @@ exports.run = async (client, message, args) => {
     .addBlankField(true)
     .addField("Also Remember To Check Out Zua's:", `Twitch - https://twitch.tv/zuacp \nYoutube - https://www.youtube.com/channel/UCjAu7aRli_GePQb4FnzRRWg\nWebsite - http://zavaar.cf/\n\n**${res.title}**\n${res.text}\n`)
     .setFooter("Copyright © Zua - http://zavaar.cf")
-    console.log('FIVEM help cmd was used..')
+     console.log(`FIVEM help cmd was used.. in ${message.guild.name}`)
+    util.log(`FIVEM help cmd was used`)
     message.channel.send({embed: embed});
 
 })
