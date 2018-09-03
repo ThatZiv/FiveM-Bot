@@ -17,6 +17,8 @@ if (!message.member.hasPermission("ADMINISTRATOR")) return util.embed(`<@${messa
           if(err) {
               util.embed("An Error Occured...\n**Console:**\n```js\n"+error+"```");
           } else {
+            console.log(`Used Command [SET] to ${ss} | ${message.guild.name}`)
+            util.log(`Used Command [SET] to ${ss}`)             
               util.good(`You successfully set **${message.guild.name}**'s FiveM server to *${ss}*`)
           }
       })
