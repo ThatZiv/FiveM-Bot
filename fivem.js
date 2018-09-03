@@ -18,6 +18,7 @@ global.req = require('request');
 global.fs = require("fs");
 global.dns = require('dns');
 global.sleep = require("system-sleep")
+const express = require('express')
 global.set = new Set();
 // User Config
 global.title = config.title;
@@ -29,9 +30,14 @@ global.color = config.color;
 global.author = package.author;
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-var today = new Date();
+// Bot Web Framework
+var path = require('path');
+const app = express();
+app.get('/', function(req, res) {
+  res.sendFile(__dirname + '/log.txt')
+})
+app.listen(1234);
+global.today = new Date();
 var h = today.getHours();
 var m = today.getMinutes();
 var s = today.getSeconds();
@@ -94,6 +100,21 @@ client.on("message", message => {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 global.num = rand(1111, 999999);
+  
+/////// LOG 
+function log(content) {
+  fs.appendFile('log.txt', `[${today}] | ${content}\n`, (err) => {  
+    if (err) throw err;
+});
+}
+
+module.exports.log = function (content) {
+  fs.appendFile('log.txt', `[${new Date()}] | ${content} | (${message.guild})\n`, (err) => {  
+    if (err) throw err;
+});
+}
+//////
+
   // z-embed
 function zembed(args) {
   let embed = new Discord.RichEmbed()
