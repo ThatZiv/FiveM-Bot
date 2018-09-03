@@ -58,6 +58,8 @@ exports.run = async (client, message, args) => {
         //.attachFile(`cache/${num}.png`)
       
         message.channel.send({embed: embed});
+        console.log(`Used Command [SERVER] in ${message.guild.name}`)
+        util.log(`Used Command [SERVER]`)
         }
     }
 // Since the addField limit is 25, is there a way to use `forEach` function for an array and make it go into a 
