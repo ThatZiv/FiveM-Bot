@@ -44,7 +44,7 @@ exports.run = async (client, message, args) => {
         //.attachFile(`cache/${num}.png`)
         message.channel.send({embed: embed})
         console.log(`Used Command [Find] in ${message.guild.name}`)
-        util.log(`Used Command [Find]`)            
+        util.log(`Find`)            
         } catch (error) {
             util.embed("The person was not found.")
         }
