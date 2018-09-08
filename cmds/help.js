@@ -43,7 +43,7 @@ exports.run = async (client, message, args) => {
     .addField("Also Remember To Check Out Zua's:", `Twitch - https://twitch.tv/zuacp \nYoutube - https://www.youtube.com/channel/UCjAu7aRli_GePQb4FnzRRWg\nWebsite - http://zavaar.cf/\n\n**${res.title}**\n${res.text}\n`)
     .setFooter("Copyright © Zua - http://zavaar.cf")
      console.log(`FIVEM help cmd was used.. in ${message.guild.name}`)
-    util.log(`FIVEM help cmd was used`)
+    util.log(`Help`)
     message.channel.send({embed: embed});
 
 })
