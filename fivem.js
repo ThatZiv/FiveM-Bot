@@ -28,13 +28,12 @@ global.prefix = config.prefix;
 global.color = config.color;
 
 global.author = package.author;
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
 // Bot Web Framework
 var path = require('path');
 const app = express();
 app.get('/', function(req, res) {
-  res.sendFile(__dirname + '/log.txt')
+  res.sendFile(__dirname + '/index.html')
 })
 app.listen(1234);
 global.today = new Date();
@@ -101,15 +100,22 @@ client.on("message", message => {
 }
 global.num = rand(1111, 999999);
   
-/////// LOG 
+/////// LOG
+
+/* Deprecated
 function log(content) {
   fs.appendFile('log.txt', `[${today}] | ${content}\n`, (err) => {  
     if (err) throw err;
 });
-}
+} */
 
 module.exports.log = function (content) {
-  fs.appendFile('log.txt', `[${new Date()}] | ${content} | (${message.guild})\n`, (err) => {  
+  fs.appendFile('index.html', `
+  <tr>
+      <th scope="row">${new Date()}</th>
+          <td>${content}</td>
+          <td>${message.guild}</td>
+  </tr>`, (err) => {  
     if (err) throw err;
 });
 }
