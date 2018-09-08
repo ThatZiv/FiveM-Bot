@@ -42,7 +42,7 @@ exports.run = async (client, message, args) => {
         
           message.channel.send({embed: embed});
           console.log(`Used Command [PLAYERS] in ${message.guild.name}`)
-          util.log(`Used Command [PLAYERS]`)
+          util.log(`Players`)
         } catch (err) {
           util.embed("That server is offline or does not exist...\n**Console:**\n```js\n"+err+"```")
         }
