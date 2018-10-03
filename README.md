@@ -28,6 +28,7 @@ ______
 ## Global FiveM Bot Log
 
 > http://thatziv.ddns.net:1234
+> http://thatziv.ddns.net/api
 
 ## *Optional* __Installation__ (Advanced Users)
 This bot is ran by [**node.js**](https://nodejs.org) using the [**discord.js**](https://discord.js.org/#/) library.
