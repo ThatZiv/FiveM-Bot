@@ -41,6 +41,7 @@ exports.run = async (client, message, args) => {
 
         .addBlankField(true)
         .addField("Identifiers", "```json\n"+`${JSON.stringify(result.identifiers)}`+"```")
+        .setFooter(`Server IP: ${servers[message.guild.id].ip}`)
         //.attachFile(`cache/${num}.png`)
         message.channel.send({embed: embed})
         console.log(`Used Command [ID] in ${message.guild.name}`)
