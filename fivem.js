@@ -72,6 +72,9 @@ client.on("message", message => {
       .setDescription(args)
       .setColor(colour)
     message.channel.send({ embed: embed })
+    .then(msg => {
+      msg.delete(5000)
+    })
     return;
   }
 
@@ -127,6 +130,9 @@ function zembed(args) {
     .setDescription(args)
     .setColor(color)
   message.channel.send({ embed: embed })
+  .then(msg => {
+     msg.delete(5000)
+  })
   return;
 }
 setTimeout(() => {
@@ -159,7 +165,7 @@ client.on("ready", () => {
         
         return start;
       }(), 1800000);
-      // 1800000 = 30 mins
+      // 1800000 = prob 30 mins
 });
 /* 
   console.log(title, `INITIALIZED...`);
@@ -185,9 +191,12 @@ client.on("message", async message => {
 
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
-
- 
-
+  setInterval(function start(){
+  fs.writeFile('api.json', `{"ping": ${Math.round(client.ping)}, "activity": "${client.guilds.size} Servers | ${config.prefix}help", "servers": ${client.guilds.size}}`, (err) => {  
+    if (err) {console.error(err)} 
+  });
+  return start;
+  }(), 600000);
 });
 
 client.login(config.token);
