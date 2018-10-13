@@ -54,7 +54,7 @@ exports.run = async (client, message, args) => {
      
         .addField("OneSync", `${start2.vars.onesync_enabled}`)
         .addField("Resources", "```json\n"+resourc+"```")
-
+        .setFooter(`Server IP: ${servers[message.guild.id].ip}`)
         //.attachFile(`cache/${num}.png`)
       
         message.channel.send({embed: embed});
