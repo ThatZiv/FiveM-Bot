@@ -10,7 +10,7 @@ exports.run = async (client, message, args) => {
           if (error) {
             return util.bad("That server is offline");
           } else {
-              util.good("Online.")
+              util.good(`Online.\nServer IP: ${servers[message.guild.id].ip}`)
           }
          
     });
