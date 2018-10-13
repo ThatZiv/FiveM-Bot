@@ -7,7 +7,7 @@ exports.run = async (client, message, args) => {
     .setAuthor(`${client.user.username} Bot on ${client.guilds.size} Servers`, client.user.avatarURL)
     .setColor(color)
     .setDescription(`**__FiveM Bot Help__**`)
-    .addField(`${config.prefix}set`, "Sets the current guild FiveM server")
+    .addField(`${config.prefix}set <serverIP:port>`, "Sets the current guild FiveM server")
     .addField(`${config.prefix}players`, "Gets the current player list of a server")
     .addField(`${config.prefix}server`, "Gets all information of a server")
     .addField(`${config.prefix}find <username>`, "Finds a user that is on the server via Username")
