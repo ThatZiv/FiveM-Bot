@@ -39,7 +39,7 @@ exports.run = async (client, message, args) => {
         embed.addField(`**${element.name}**`, `ID: **${element.id}** Ping: **${element.ping}**`)
   
         })
-        
+          .setFooter(`Server IP: ${servers[message.guild.id].ip}`)
           message.channel.send({embed: embed});
           console.log(`Used Command [PLAYERS] in ${message.guild.name}`)
           util.log(`Players`)
