@@ -19,11 +19,18 @@ ______
 _____
 ## __Commands__
 `$set <serverAddress:withPort>` - Sets the current guild FiveM server
+
 `$players` - Gets the current player list of a server
+
 `$server` - Gets all information of a server
+
 `$find <username>` - Finds a user that is on the server via Username
+
 `$id <id>` - Finds a user that is on the server via Server ID
-`$help` Sends Help Embed
+
+`$help` - Sends Help Embed
+
+`$status` - Checks if the server is online
 ______
 ## Global FiveM Bot Log
 
