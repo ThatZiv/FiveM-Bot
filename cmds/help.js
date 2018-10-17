@@ -10,6 +10,7 @@ exports.run = async (client, message, args) => {
     .addField(`${config.prefix}server`, "Gets all information of a server")
     .addField(`${config.prefix}find <username>`, "Finds a user that is on the server via Username")
     .addField(`${config.prefix}id <id>`, "Finds a user that is on the server via Server ID")
+    .addField(`${config.prefix}status`, "Checks if the server is online")
     .addBlankField(true)
     .addField("FiveM Bot API", `Log - ${config.cdn}:1234\nAPI (JSON) - ${config.cdn}:1234/api`)
     .setThumbnail(`${config.cdn}/assets/fivem.png`)
