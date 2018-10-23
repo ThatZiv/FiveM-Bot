@@ -33,13 +33,13 @@ exports.run = async (client, message, args) => {
           .setAuthor(title, client.user.avatarURL)
           .setThumbnail(`${config.cdn}/assets/fivem.png`)
           .setDescription(`**${e}** out of **${start2.vars.sv_maxClients}** Players.\n\n*(First 25 People)*`)
+          .setFooter(`Server IP: ${servers[message.guild.id].ip}`)
          start.forEach(function(element) {
           var sv = `**${element.name}**\nID: **${element.id}** Ping: **${element.ping}**`;
 
         embed.addField(`**${element.name}**`, `ID: **${element.id}** Ping: **${element.ping}**`)
   
         })
-          .setFooter(`Server IP: ${servers[message.guild.id].ip}`)
           message.channel.send({embed: embed});
           console.log(`Used Command [PLAYERS] in ${message.guild.name}`)
           util.log(`Players`)
