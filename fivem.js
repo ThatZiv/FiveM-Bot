@@ -199,7 +199,7 @@ client.on("message", async message => {
     let minutes = Math.floor(totalSeconds / 60);
     let seconds = Math.floor(totalSeconds % 60);
     let uptime = `${hours} hours, ${minutes} minutes and ${seconds} seconds`;
-  fs.writeFile('api.json', `{"ping": ${Math.round(client.ping)}, "users": ${client.guilds.size}, "servers": ${client.guilds.size}, "uptime": ["${hours} hours", "${minutes} minutes", "${seconds} seconds"]}`, (err) => {  
+  fs.writeFile('api.json', `{"ping": ${Math.round(client.ping)}, "users": ${client.users.size}, "servers": ${client.guilds.size}, "uptime": ["${hours} hours", "${minutes} minutes", "${seconds} seconds"]}`, (err) => {  
     if (err) {console.error(err)} 
   });
   return start;
