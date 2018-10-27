@@ -157,15 +157,16 @@ setTimeout(() => {
 
 //initial start funtion
 client.on("ready", () => {
-    var statuss = [`${client.users.size} Users`, `${client.guilds.size} Servers`]
+    var statuss = [`${client.users.size} Users | ${config.prefix}help`, `${client.guilds.size} Servers | ${config.prefix}help`]
     setInterval(function start(){
+        var rand = statuss[Math.floor(Math.random() * statuss.length)];
         console.log(`[${client.user.username} Bot]: INITIALIZED...`);
-        client.user.setActivity(`${statuss[Math.floor(Math.random() * statuss.length)]} | ${config.prefix}help `, { type: "WATCHING" });
+        client.user.setActivity(`${rand}`, { type: "WATCHING"});
         client.user.setStatus('online');
         
         return start;
-      }(), 1800000);
-      // 1800000 = prob 30 mins
+      }(), 180000);
+      // 180000 = 3 mins i think
 });
 /* 
   console.log(title, `INITIALIZED...`);
@@ -198,7 +199,7 @@ client.on("message", async message => {
     let minutes = Math.floor(totalSeconds / 60);
     let seconds = Math.floor(totalSeconds % 60);
     let uptime = `${hours} hours, ${minutes} minutes and ${seconds} seconds`;
-  fs.writeFile('api.json', `{"ping": ${Math.round(client.ping)}, "activity": "${client.guilds.size} Servers | ${config.prefix}help", "servers": ${client.guilds.size}, "uptime": ["${hours} hours", "${minutes} minutes", "${seconds} seconds"]}`, (err) => {  
+  fs.writeFile('api.json', `{"ping": ${Math.round(client.ping)}, "users": ${client.guilds.size}, "servers": ${client.guilds.size}, "uptime": ["${hours} hours", "${minutes} minutes", "${seconds} seconds"]}`, (err) => {  
     if (err) {console.error(err)} 
   });
   return start;
