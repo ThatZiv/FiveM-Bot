@@ -12,7 +12,6 @@ exports.run = async (client, message, args) => {
         .addField("Ping", `API: ${Math.round(client.ping)}ms\nMessage: ${Math.round(m.createdTimestamp - message.createdTimestamp)}ms`)
         .addField("Servers", `${client.guilds.size}\n**API Servers**: ${api.servers}`)
         .addField("Users", `${client.users.size}\n**API Users**: ${api.users}`)
-        .addField("Uptime", `${api.uptime[0]} ${api.uptime[1]} ${api.uptime[2]}`)
         .addBlankField(true)
         .setURL(`${config.cdn}:1234/api`)
         .addField("Main Server", config.cdn)
