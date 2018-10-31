@@ -1,19 +1,10 @@
 exports.run = async (client, message, args) => {
     var util = require("../fivem.js")
     message.delete();
-     ///////////////////////////////
-     if (activation[message.guild.id].activation == 1) { 
-        var state = "FiveM Bot Premium";
-        var icon = "http://thatziv.ddns.net/assets/fivemp.png"
-        var color = premcolor
-    } else {
-        var state = "FiveM Bot";
-        var icon = "http://thatziv.ddns.net/assets/fivem.png"
-    }
-    //////////////////////////////
 
+var icon = "http://thatziv.ddns.net/assets/fivem.png"
     let embed = new Discord.RichEmbed()
-    .setAuthor(state, icon)
+    .setAuthor("FiveM Bot", icon)
     .setColor(color)
     .setDescription(`**__FiveM Bot Help__**\n${p} - FiveM Premium Feature`)
     .addField(`${p} Featured Servers`, "Golden State RP https://discord.gg/muVNJGz")
