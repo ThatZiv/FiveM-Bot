@@ -78,6 +78,16 @@ client.on("message", message => {
     return;
   }
 
+    module.exports.error = function (args) {
+    let embed = new Discord.RichEmbed()
+      .setAuthor(state, icon)
+      .setDescription(args)
+      .setColor('#e22424')
+      .setThumbnail(icon)
+    message.channel.send({ embed: embed })
+    return;
+  }
+  
   module.exports.good = function (args) {
     let embed = new Discord.RichEmbed()
     .setAuthor(title, client.user.avatarURL)
@@ -122,6 +132,16 @@ module.exports.log = function (content) {
     if (err) throw err;
 });
 }
+   module.exports.bad = function (args) {
+
+    let embed = new Discord.RichEmbed()
+    .setAuthor(state, icon)
+      .addField("Offline.", args)
+      .setColor('#e22424')
+      .setThumbnail(icon)
+    message.channel.send({ embed: embed })
+    return;
+  }
 //////
 
   // z-embed
