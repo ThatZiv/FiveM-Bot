@@ -35,6 +35,9 @@ const app = express();
 app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html')
 })
+app.get('/api', function(req, res) {
+  res.sendFile(__dirname + '/api.json')
+})
 app.listen(1234);
 global.today = new Date();
 var h = today.getHours();
