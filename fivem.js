@@ -138,7 +138,7 @@ module.exports.log = function (content) {
    module.exports.bad = function (args) {
 
     let embed = new Discord.RichEmbed()
-    .setAuthor(state, icon)
+    .setAuthor(title, icon)
       .addField("Offline.", args)
       .setColor('#e22424')
       .setThumbnail(icon)
