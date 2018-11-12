@@ -20,6 +20,7 @@ global.dns = require('dns');
 global.sleep = require("system-sleep")
 const express = require('express')
 global.set = new Set();
+global.icon = "http://thatziv.ddns.net/assets/fivem.png";
 // User Config
 global.title = config.title;
 
