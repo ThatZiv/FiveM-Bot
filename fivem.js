@@ -3,7 +3,7 @@
 //            Complied and Created
 //            By Zua (ThatZiv)
 //            Purpose: "FiveM Bot"
-//            Version: 1.0.0
+//            Version: 7.1.0
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Load up the discord.js library (node.js)
@@ -15,18 +15,29 @@ global.config = require("./cmds/config/config.json");
 global.package = require("./package.json");
 global.servers = require('./servers.json')
 global.req = require('request');
+//global.snek = require("snekfetch")
+global.notes = require("./auth/notes.json")
+global.news = require("./auth/news.json").body;
+
 global.fs = require("fs");
 global.dns = require('dns');
-global.sleep = require("system-sleep")
-const express = require('express')
+global.sleep = require("system-sleep");
+global.createHash = require('hash-generator');
+
+/* dumped from premium build */
+global.state = config.title;
+global.icon = `http://thatziv.ddns.net/assets/fivem.png`;
+
+const express = require('express');
 global.set = new Set();
-global.icon = "http://thatziv.ddns.net/assets/fivem.png";
 // User Config
 global.title = config.title;
 
 global.prefix = config.prefix;
 
 global.color = config.color;
+
+global.premcolor = config.premcolor;
 
 global.author = package.author;
 ///////////////////////////////////////////////////////////////////////////////////////////////
