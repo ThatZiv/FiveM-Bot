@@ -1,0 +1,8 @@
+{
+  "title": "FiveM Bot",
+  "color": "#7289da",
+  "token": "your_token_here",
+  "prefix": "$",
+  "premcolor": "#f4f4f4",
+  "cdn": "http://thatziv.ddns.net"
+}
