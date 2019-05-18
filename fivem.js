@@ -53,17 +53,6 @@ global.author = package.author;
 zembed("An Error Occured...\n**Console:**\n```js\n"+error+"```");
  */
 
-fs.readdir("./events/", (err, files) => {
-  if (err) return console.error(err);
-  files.forEach(file => {
-
-    let eventFunction = require(`./events/${file}`);
-    let eventName = file.split(".")[0];
-
-    client.on(eventName, (...args) => eventFunction.run(client, ...args));
-  });
-});
-
 client.on("message", message => {
 
   if (!message.content.startsWith(config.prefix)) return;
