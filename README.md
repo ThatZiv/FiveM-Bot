@@ -17,20 +17,35 @@ __Also Make Sure to use it in a discord server channel and *not a DM channel*__ 
 _____
 ## __Commands__
 `$set <serverAddress:withPort>` - Sets the current guild FiveM server
+
 `$players` - Gets the current player list of a server
+
 `$server` - Gets all information of a server
+
 `$find <username>` - Finds a user that is on the server via Username
+
 `$id <id>` - Finds a user that is on the server via Server ID
+
 `$status` - Checks the current status of the server
+
 `$help` Sends Help Embed
+
 `$status` - Checks if the server is online
+
 `$stats` - Checks bot statistics
+
 `$save-log <person's server id>` - Saves a player's information
+
 `$get-log` - Gets a player's information (per guild)
+
 `$forum <categories>` - Searches the latest topics in the categories on https://forum.fivem.net/
+
 `$forum` - Checks the current categories on https://forum.fivem.net/
+
 `$forum search <search terms>` - Searches terms on https://forum.fivem.net/
+
 `$forum user <username>` - Searches user's info on https://forum.fivem.net/
+
 `$native <search terms>` - returns a specific GTAV native that you searched for
 ______
 
