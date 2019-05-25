@@ -3,7 +3,7 @@
 //            Complied and Created
 //            By Zua (ThatZiv)
 //            Purpose: "FiveM Bot"
-//            Version: 7.1.2
+//            Version: 7.1.3
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Load up the discord.js library (node.js)
@@ -20,6 +20,10 @@ global.notes = require("./auth/notes.json")
 global.news = require("./auth/news.json").body;
 global.modules = require("./modules")
 global.log = require("./modules/log") 
+// RCON UPDATE
+global.Q3RCon = require('quake3-rcon');
+global.rcondb = require("./auth/rcon.json");
+global.crypto = require("crypto-js");
 // NATIVES
 global.tempNatives = require("./auth/temp.json")
 global.listNatives = require("./auth/names.json")
@@ -27,7 +31,7 @@ global.listNatives = require("./auth/names.json")
 global.fs = require("fs");
 global.dns = require('dns');
 global.sleep = require("system-sleep");
-global.createHash = require('hash-generator');
+global.createHash = require('hash-generator'); // horrible idea btw
 global.Fuse = require("fuse.js")
 global.colors = require("colors")
 /* dumped from premium build */

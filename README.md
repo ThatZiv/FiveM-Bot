@@ -11,7 +11,7 @@ https://discordbots.org/bot/483787947070586880
 ## __Set-Up__ 
 1. Invite the [bot](https://discordapp.com/oauth2/authorize?client_id=483787947070586880&permissions=8192&redirect_uri=http%3A%2F%2Fzavaar.cf&scope=bot)
 2. In any channel, type `$set <serverAddress:withPort>` (ex: `$set thatziv.ddns.net:30120`)
-3. The Bot is now setup, do `#help` to see all the commands
+3. The Bot is now setup, do `$help` to see all the commands
  __Please Make Sure to Give the Bot Administrator Permissions.__*
 __Also Make Sure to use it in a discord server channel and *not a DM channel*__ *
 _____
@@ -47,6 +47,16 @@ _____
 `$forum user <username>` - Searches user's info on https://forum.fivem.net/
 
 `$native <search terms>` - returns a specific GTAV native that you searched for
+
+`$rcon help` - Sends RCON help embed
+
+`$rcon set <rcon_password>` - Sets the guild's rcon server
+
+`$rcon <rcon_command>` - Executes an [RCON Command](https://docs.fivem.net/server-manual/server-commands/)
+
+
+
+
 ______
 
 
